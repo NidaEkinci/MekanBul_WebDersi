@@ -10,6 +10,8 @@ import PageNotFound from "./components/PageNotFound";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import store from "./redux/store.jsx";
 import { Provider } from "react-redux";
+import Login from "./components/Login";
+import Register from "./components/Register";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
     <BrowserRouter
@@ -24,6 +26,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="venue/:id" element={<VenueDetail />} />
           <Route path="venue/:id/comment/new" element={<AddComment />} />
           <Route path="about" element={<About />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
