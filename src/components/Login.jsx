@@ -35,6 +35,7 @@ function Login() {
                   </label>
                 </div> 
               </div>
+              <br />
               <button className="btn btn-default pull-right">Giriş Yap</button>
               <Link to="/register">Kayıt ol</Link>
             </form>
